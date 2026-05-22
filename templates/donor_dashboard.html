@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donor Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #1e293b;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .sidebar ul li:hover,
+        .sidebar .active {
+            background: #334155;
+        }
+
+        /* Main */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        /* Header */
+        .header h2 {
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: gray;
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Nourix</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>My Donations</li>
+            <li>Profile</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="header">
+            <h2>Hello, {{ name }} 👋</h2>
+            <p>Welcome to your donor dashboard</p>
+        </div>
+
+        <!-- Donation Form -->
+        <div class="card">
+            <h3>Post a Donation</h3>
+
+            <form action="/post_donation" method="POST">
+
+                <div class="form-group">
+                    <label>Food Details</label>
+                    <input type="text" name="food_details" placeholder="e.g. 50 plates of food" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="text" name="quantity" placeholder="Enter quantity" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Pickup Location</label>
+                    <input type="text" name="location" placeholder="Enter location" required>
+                </div>
+
+                <button type="submit">Post Donation</button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

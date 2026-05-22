@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOURIX | Connect Surplus to Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-green-600">Nourix</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                    <a href="#" class="hover:text-green-600">How it Works</a>
+                    <a href="#" class="hover:text-green-600">Donate Food</a>
+                    <a href="#" class="hover:text-green-600">NGO Partners</a>
+                    <a href="#" class="hover:text-green-600">About us</a>
+                </div>
+                <div>
+                    <button class="bg-green-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-green-700 transition">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-white py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                    Don't let good food <br><span class="text-green-600">go to waste.</span>
+                </h1>
+                <p class="mt-6 text-xl text-gray-600">Connecting hotels, industries, and mess halls with local NGOs and volunteers to feed the community.</p>
+                <div class="mt-10 flex space-x-4">
+                    <a href="#donate" class="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-orange-600 shadow-lg transition">I have Surplus Food</a>
+                    <a href="#volunteer" class="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-green-50 transition">I want to Collect</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800" alt="Feeding Community" class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div id="donate" class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-orange-500">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hotel text-2xl text-orange-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">For Industries & Hotels</h2>
+                    <p class="text-gray-600 mb-6">Have leftover meals from an event or daily surplus? List it in 60 seconds and we'll notify nearby collectors.</p>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Reduce disposal costs</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Real-time tracking of pickup</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Tax-deductible donation receipts</li>
+                    </ul>
+                   <a href="/donor/register"><button class="w-full bg-orange-500 text-white py-3 rounded-xl font-bold hover:bg-orange-600">Register as a Donor</button></a>
+                </div>
+
+                <div id="volunteer" class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-green-500">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hands-helping text-2xl text-green-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">For NGOs & Volunteers</h2>
+                    <p class="text-gray-600 mb-6">Join our network to receive alerts about available food in your area. Help us bridge the gap between waste and hunger.</p>
+                    <ul class="space-y-3 mb-8 text-gray-700">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Instant location-based alerts</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Coordinate with multiple donors</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Impact dashboard for your NGO</li>
+                    </ul>
+                    
+                    <a href="/collector/register"><button class="w-full bg-green-600 text-white py-3 rounded-xl font-bold hover:bg-green-700">Register to Collect</button></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-green-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <p class="text-4xl font-bold">10k+</p>
+                    <p class="text-green-300">Meals Saved</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">500+</p>
+                    <p class="text-green-300">Active Donors</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">120+</p>
+                    <p class="text-green-300">Verified NGOs</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-bold">15t</p>
+                    <p class="text-green-300">CO2 Reduced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-10 border-t">
+        <div class="text-center text-gray-500">
+            <p>&copy; 2026 Nourix Initiative. Making the world better, one meal at a time.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

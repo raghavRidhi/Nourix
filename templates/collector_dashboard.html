@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collector Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #0f172a;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 30px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .sidebar ul li:hover,
+        .sidebar .active {
+            background: #1e293b;
+        }
+
+        /* Main */
+        .main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        /* Header */
+        .header h2 {
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: gray;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .donation {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .donation h4 {
+            margin-bottom: 5px;
+        }
+
+        .donation p {
+            color: gray;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background: #3b82f6;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Nourix</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li>Available Donations</li>
+            <li>Accepted Donations</li>
+            <li>Profile</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="header">
+            <h2>Hello, {{ name }} 👋</h2>
+            <p>Welcome to your collector dashboard</p>
+        </div>
+
+        <!-- Available Donations -->
+        <div class="card">
+            <h3>Available Donations</h3>
+
+            <!-- Sample Donation Card -->
+            <div class="donation">
+                <h4>Food: 50 Plates of Rice</h4>
+                <p>Location: Adajan, Surat</p>
+                <p>Status: Available</p>
+
+                <form action="/accept_donation/1" method="POST">
+                    <button class="btn">Accept</button>
+                </form>
+            </div>
+
+            <div class="donation">
+                <h4>Food: Bread & Vegetables</h4>
+                <p>Location: Vesu, Surat</p>
+                <p>Status: Available</p>
+
+                <form action="/accept_donation/2" method="POST">
+                    <button class="btn">Accept</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
