@@ -1,0 +1,1 @@
+Hey this is project is build totally on python and html, css , the idea behind this project was to stop the food surpuls wastes and , redistribute it to the poor . The project is build to connect the NGOs , and voluneteers to the hotels and mess which produce the surplus food , the volunteers will collect the food and redistribute to the needful 
