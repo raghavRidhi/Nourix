@@ -6,10 +6,10 @@ print("Trying PyMySQL connection...")
 
 try:
     conn = pymysql.connect(
-        host="localhost",
+        host="mysql.railway.internal",
         user="root",
-        password="Mysql@2345",
-        database="food_app",
+        password="SjZEByEemVZZONYqUjSPsUrRnrwxqoMA",
+        database="railway",
         port=3306
     )
     cursor = conn.cursor()
