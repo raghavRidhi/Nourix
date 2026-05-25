@@ -6,11 +6,11 @@ print("Trying PyMySQL connection...")
 
 try:
     conn = pymysql.connect(
-        host="mysql.railway.internal",
-        user="root",
-        password="SjZEByEemVZZONYqUjSPsUrRnrwxqoMA",
-        database="railway",
-        port=3306
+    host="kodama.proxy.rlwy.net",
+    user="root",
+    password="SjZEByEemVZZONYqUjSPsUrRnrwxqoMA",
+    database="railway",
+    port=25687
     )
     cursor = conn.cursor()
     print("PyMySQL connected successfully")
